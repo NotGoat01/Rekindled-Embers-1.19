@@ -16,22 +16,13 @@ public class ModItems {
 
 
     //Items
-    public static final Item MOLTEN_HEART = registerItem("moltenheart",
+    public static final Item MOLTEN_HEART = registerItem("molten_heart",
             new Item(new FabricItemSettings().group(ModItemGroup.RUBY)));
 
     public static final Item RUBY = registerItem("ruby",
             new Item(new FabricItemSettings().group(ModItemGroup.RUBY)));
 
 
-
-    //mod-id:item-name
-
-
-    //Block items
-    public static final Item RUBY_BLOCK =  registerItem("ruby_block",
-            new Item(new FabricItemSettings().group(ModItemGroup.RUBY)));
-    public static final Item RUBY_ORE =  registerItem("ruby_ore",
-                new Item(new FabricItemSettings().group(ModItemGroup.RUBY)));
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(RekindledEmbers.MOD_ID, name), item);

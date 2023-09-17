@@ -18,7 +18,7 @@ public class RekindledEmbers implements ModInitializer {
     public void onInitialize() {
 
         ModItems.registerModItems();
-        ModBlocks.registerBlocks();
-        LOGGER.info("Initializing Mod: RekindledEmbers");
+        ModBlocks.registerModBlocks();
+
     }
 }
