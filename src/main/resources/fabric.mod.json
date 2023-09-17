@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "rekindledembers",
+  "version": "${version}",
+
+  "name": "Rekindled Embers",
+  "description": "Rekindled Embers",
+  "authors": [
+    "NotGoatGaming"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "cc0-1.0",
+  "icon": "assets/rekindledembers/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.NotGoat.RekindledEmbers.RekindledEmbers"
+    ]
+  },
+  "client": [
+    "com.NotGoat.RekindledEmbers.RekindledEmbersClient"
+
+  ],
+  "mixins": [
+    "rekindledembers.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
