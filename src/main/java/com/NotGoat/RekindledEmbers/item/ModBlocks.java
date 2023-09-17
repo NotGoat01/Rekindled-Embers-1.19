@@ -1,4 +1,4 @@
-package com.NotGoat.RekindledEmbers.registry;
+package com.NotGoat.RekindledEmbers.item;
 
 import com.NotGoat.RekindledEmbers.RekindledEmbers;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -27,7 +27,7 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.STONE)
 
     );
-    public static void registerModBlocks() {
+    public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(RekindledEmbers.MOD_ID, "ruby_block"), RUBY_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(RekindledEmbers.MOD_ID, "ruby_ore"), RUBY_ORE);
     }

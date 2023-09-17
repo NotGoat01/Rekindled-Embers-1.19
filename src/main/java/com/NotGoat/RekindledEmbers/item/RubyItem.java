@@ -1,4 +1,5 @@
-package com.NotGoat.RekindledEmbers.items;
+/*
+package com.NotGoat.RekindledEmbers.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
@@ -7,7 +8,6 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
 import net.minecraft.text.Text;
@@ -18,7 +18,7 @@ import net.minecraft.util.Hand;
 
 public class RubyItem extends Item {
     public RubyItem() {
-        super(new FabricItemSettings().group(ItemGroup.MATERIALS));
+        super(new FabricItemSettings().group(ModItemGroup.RUBY));
     }
 
 
@@ -43,3 +43,4 @@ public class RubyItem extends Item {
         return super.useOnEntity(stack, user, entity, hand);
     }
 }
+*/

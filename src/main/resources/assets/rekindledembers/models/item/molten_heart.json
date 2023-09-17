@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "rekindledembers:items/molten_heart"
+    "layer0": "rekindledembers:item/molten_heart"
   }
 }
