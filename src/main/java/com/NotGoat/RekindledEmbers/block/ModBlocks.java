@@ -1,5 +1,6 @@
-package com.NotGoat.RekindledEmbers.item;
+package com.NotGoat.RekindledEmbers.block;
 
+import com.NotGoat.RekindledEmbers.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import com.NotGoat.RekindledEmbers.RekindledEmbers;
@@ -16,10 +17,15 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.RUBY);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.RUBY);
 
     public static final Block RUBY_ORE = registerBlock("ruby_ore",
-            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool(),
+                    UniformIntProvider.create(3, 7)), ModItemGroup.RUBY
+    );
+
+    public static final Block DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModItemGroup.RUBY
     );
 

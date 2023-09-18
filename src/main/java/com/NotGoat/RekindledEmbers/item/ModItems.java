@@ -22,6 +22,9 @@ public class ModItems {
     public static final Item RUBY = registerItem("ruby",
             new Item(new FabricItemSettings().group(ModItemGroup.RUBY)));
 
+    public static final Item RAW_RUBY = registerItem("raw_ruby",
+            new Item(new FabricItemSettings().group(ModItemGroup.RUBY)));
+
 
 
     public static Item registerItem(String name, Item item) {
@@ -30,7 +33,7 @@ public class ModItems {
 
     public static void registerModItems() {
 
-        RekindledEmbers.LOGGER.debug("Regestering Mod Items For" + RekindledEmbers.MOD_ID);
+        RekindledEmbers.LOGGER.debug("Registering Mod Items For" + RekindledEmbers.MOD_ID);
 
     }
 

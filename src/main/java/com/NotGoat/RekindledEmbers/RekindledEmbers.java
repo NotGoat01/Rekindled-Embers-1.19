@@ -1,6 +1,6 @@
 package com.NotGoat.RekindledEmbers;
 
-import com.NotGoat.RekindledEmbers.item.ModBlocks;
+import com.NotGoat.RekindledEmbers.block.ModBlocks;
 import com.NotGoat.RekindledEmbers.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.LoggerFactory;
