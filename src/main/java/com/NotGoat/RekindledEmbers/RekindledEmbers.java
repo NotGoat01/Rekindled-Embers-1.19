@@ -1,11 +1,14 @@
 package com.NotGoat.RekindledEmbers;
 
 import com.NotGoat.RekindledEmbers.block.ModBlocks;
+import com.NotGoat.RekindledEmbers.entity.ModEntities;
+import com.NotGoat.RekindledEmbers.entity.custom.IgneoGolemEntity;
 import com.NotGoat.RekindledEmbers.item.ModItems;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
-
+import software.bernie.geckolib3.GeckoLib;
 
 
 public class RekindledEmbers implements ModInitializer {
@@ -19,6 +22,8 @@ public class RekindledEmbers implements ModInitializer {
 
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+        GeckoLib.initialize();
+        FabricDefaultAttributeRegistry.register(ModEntities.IGNEO_GOLEM, IgneoGolemEntity.setAttributes());
 
     }
 }
